@@ -1,0 +1,15 @@
+PODS:
+  - CryptoSwift (0.6.9)
+  - Eureka (3.0.0)
+
+DEPENDENCIES:
+  - CryptoSwift
+  - Eureka
+
+SPEC CHECKSUMS:
+  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
+  Eureka: f36fd440c3ebb7bfea0a4fbe6f16a05f1cb35906
+
+PODFILE CHECKSUM: 36937fb242185ed523168af81504c10e8feea756
+
+COCOAPODS: 1.2.1

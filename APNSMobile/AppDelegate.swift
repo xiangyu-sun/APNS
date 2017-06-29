@@ -13,9 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    static var identifier: Int?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UserDefaults.standard.set("9F952A39194B3A88680515FD4CE349A20F8612D83EF42D3476C65A83737BCCFB", forKey: "token")
+        
+        return true
+    }
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        guard let host = url.host else { return false}
+        UserDefaults.standard.set(host, forKey: "token")
+        
         return true
     }
 
@@ -25,8 +34,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        if let id = AppDelegate.identifier{
+            UIApplication.shared.endBackgroundTask(id)
+            AppDelegate.identifier = nil
+        }
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        AppDelegate.identifier = UIApplication.shared.beginBackgroundTask(withName: "delay_send") {
+            UIApplication.shared.endBackgroundTask(AppDelegate.identifier!)
+            AppDelegate.identifier = nil
+        }
+        
+        
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
