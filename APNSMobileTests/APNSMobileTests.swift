@@ -2,12 +2,11 @@
 //  APNSMobileTests.swift
 //  APNSMobileTests
 //
-//  Created by Alex on 5/31/17.
+//  Created by xiangyu sun on 9/11/17.
 //  Copyright © 2017 Emirates. All rights reserved.
 //
 
 import XCTest
-@testable import APNSMobile
 
 class APNSMobileTests: XCTestCase {
     

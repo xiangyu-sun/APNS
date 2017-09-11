@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'APNSMobile' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,9 +7,8 @@ target 'APNSMobile' do
 
   # Pods for APNSMobile
 
-  pod 'Eureka'
-  pod 'CryptoSwift'
-
+  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'feature/Xcode9-Swift4'
+  
   target 'APNSMobileTests' do
     inherit! :search_paths
     # Pods for testing

@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UserDefaults.standard.set("9F952A39194B3A88680515FD4CE349A20F8612D83EF42D3476C65A83737BCCFB", forKey: "token")
+        let _ = JSONFileManager.shared
+        UserDefaults.standard.set("0296194CD04163B472DBA55986AB34AA3C36F11C26A4A4E506E42738B2CBC011", forKey: "token")
         
         return true
     }

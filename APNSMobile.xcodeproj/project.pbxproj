@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		0C73529169CD28A585026463 /* Pods_APNSMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB602F944475798E484297E1 /* Pods_APNSMobile.framework */; };
-		6091FC05D6D7806809254637 /* Pods_APNSMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4484A7A371C7CC15F424DB /* Pods_APNSMobileTests.framework */; };
-		B0C29CC22FA5A850CBFBC2CC /* Pods_APNSMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A21F3C2746465C6E7D6986 /* Pods_APNSMobileUITests.framework */; };
-		FA2647AA1EF1583100E6608A /* NotificationPayload.apns in Resources */ = {isa = PBXBuildFile; fileRef = FA2647A91EF157A600E6608A /* NotificationPayload.apns */; };
+		1354DE9D625AA7CEB17BC69A /* Pods_APNSMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A21F3C2746465C6E7D6986 /* Pods_APNSMobileUITests.framework */; };
+		5C4B899E876AB79336F3A013 /* Pods_APNSMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4484A7A371C7CC15F424DB /* Pods_APNSMobileTests.framework */; };
+		999C98671F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 999C98661F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 */; };
+		99B628ED1F42CFB40086B006 /* Certificates-Dev.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 99B628EC1F42CF210086B006 /* Certificates-Dev.p12 */; };
+		99E7A2EC1F666C5C0070DBD1 /* APNSMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */; };
 		FA2647AC1EF163D000E6608A /* PayloadSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2647AB1EF163D000E6608A /* PayloadSelectTableViewController.swift */; };
-		FA5A42F31EF69B150094BB5F /* Certificates.p12 in Resources */ = {isa = PBXBuildFile; fileRef = FA5A42F21EF69B150094BB5F /* Certificates.p12 */; };
+		FA49C3801F04DE410036116A /* JSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C37F1F04DE410036116A /* JSONFileManager.swift */; };
+		FA49C3821F04DF550036116A /* templates in Resources */ = {isa = PBXBuildFile; fileRef = FA49C3811F04DF550036116A /* templates */; };
 		FAC493D11EDE972F00D01A0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC493D01EDE972F00D01A0A /* AppDelegate.swift */; };
 		FAC493D61EDE972F00D01A0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC493D41EDE972F00D01A0A /* Main.storyboard */; };
 		FAC493D81EDE972F00D01A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC493D71EDE972F00D01A0A /* Assets.xcassets */; };
 		FAC493DB1EDE972F00D01A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC493D91EDE972F00D01A0A /* LaunchScreen.storyboard */; };
-		FAC493E61EDE972F00D01A0A /* APNSMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC493E51EDE972F00D01A0A /* APNSMobileTests.swift */; };
-		FAC493F11EDE972F00D01A0A /* APNSMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC493F01EDE972F00D01A0A /* APNSMobileUITests.swift */; };
 		FAC493FF1EDE974100D01A0A /* APNSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC493FE1EDE974100D01A0A /* APNSManager.swift */; };
-		FAC494031EDE9ADA00D01A0A /* Certificates-Dev-APNS.p12 in Resources */ = {isa = PBXBuildFile; fileRef = FAC494021EDE9ADA00D01A0A /* Certificates-Dev-APNS.p12 */; };
 		FADA10D31EE3F5A9002D0441 /* APNSFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA10D21EE3F5A9002D0441 /* APNSFormViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FAC493E21EDE972F00D01A0A /* PBXContainerItemProxy */ = {
+		99E7A2E01F666C540070DBD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAC493C51EDE972F00D01A0A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FAC493CC1EDE972F00D01A0A;
 			remoteInfo = APNSMobile;
 		};
-		FAC493ED1EDE972F00D01A0A /* PBXContainerItemProxy */ = {
+		99E7A2EE1F666C5C0070DBD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAC493C51EDE972F00D01A0A /* Project object */;
 			proxyType = 1;
@@ -46,53 +46,55 @@
 		0B691124705A87DA4B3BB42A /* Pods-APNSMobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests.release.xcconfig"; sourceTree = "<group>"; };
 		258B134A437EC704B4A71BCA /* Pods-APNSMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B675FBAB304F6918B905441 /* Pods-APNSMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		9960FBCC1F610A4C00D41649 /* APNSMobile-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APNSMobile-Swift.h"; sourceTree = SOURCE_ROOT; };
+		999C98661F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CertificatesDev_ENT.p12; sourceTree = "<group>"; };
+		99B628EC1F42CF210086B006 /* Certificates-Dev.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Certificates-Dev.p12"; sourceTree = "<group>"; };
+		99E7A2DB1F666C540070DBD1 /* APNSMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSMobileUITests.swift; sourceTree = "<group>"; };
+		99E7A2ED1F666C5C0070DBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4C9EC6883818CCDC18EA008 /* Pods-APNSMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobile/Pods-APNSMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		AA44080D5C78C81F84132AD2 /* Pods-APNSMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB602F944475798E484297E1 /* Pods_APNSMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNSMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A21F3C2746465C6E7D6986 /* Pods_APNSMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNSMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4484A7A371C7CC15F424DB /* Pods_APNSMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNSMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA2647A91EF157A600E6608A /* NotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = NotificationPayload.apns; sourceTree = "<group>"; };
 		FA2647AB1EF163D000E6608A /* PayloadSelectTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadSelectTableViewController.swift; sourceTree = "<group>"; };
-		FA5A42F21EF69B150094BB5F /* Certificates.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Certificates.p12; path = ../../../Documents/Certificates.p12; sourceTree = "<group>"; };
+		FA49C37F1F04DE410036116A /* JSONFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFileManager.swift; sourceTree = "<group>"; };
+		FA49C3811F04DF550036116A /* templates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = templates; sourceTree = "<group>"; };
 		FAC493CD1EDE972F00D01A0A /* APNSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC493D01EDE972F00D01A0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAC493D51EDE972F00D01A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAC493D71EDE972F00D01A0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC493DA1EDE972F00D01A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC493DC1EDE972F00D01A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC493E11EDE972F00D01A0A /* APNSMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC493E51EDE972F00D01A0A /* APNSMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSMobileTests.swift; sourceTree = "<group>"; };
 		FAC493E71EDE972F00D01A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC493EC1EDE972F00D01A0A /* APNSMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC493F01EDE972F00D01A0A /* APNSMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSMobileUITests.swift; sourceTree = "<group>"; };
-		FAC493F21EDE972F00D01A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC493FE1EDE974100D01A0A /* APNSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSManager.swift; sourceTree = "<group>"; };
-		FAC494021EDE9ADA00D01A0A /* Certificates-Dev-APNS.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Certificates-Dev-APNS.p12"; path = "../../../Documents/Certificates-Dev-APNS.p12"; sourceTree = "<group>"; };
 		FADA10D21EE3F5A9002D0441 /* APNSFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		99E7A2D81F666C540070DBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4B899E876AB79336F3A013 /* Pods_APNSMobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99E7A2E61F666C5C0070DBD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1354DE9D625AA7CEB17BC69A /* Pods_APNSMobileUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC493CA1EDE972F00D01A0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0C73529169CD28A585026463 /* Pods_APNSMobile.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC493DE1EDE972F00D01A0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6091FC05D6D7806809254637 /* Pods_APNSMobileTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC493E91EDE972F00D01A0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B0C29CC22FA5A850CBFBC2CC /* Pods_APNSMobileUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,12 +124,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		99E7A2EA1F666C5C0070DBD1 /* APNSMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */,
+				99E7A2ED1F666C5C0070DBD1 /* Info.plist */,
+			);
+			path = APNSMobileUITests;
+			sourceTree = "<group>";
+		};
 		FAC493C41EDE972F00D01A0A = {
 			isa = PBXGroup;
 			children = (
 				FAC493CF1EDE972F00D01A0A /* APNSMobile */,
 				FAC493E41EDE972F00D01A0A /* APNSMobileTests */,
-				FAC493EF1EDE972F00D01A0A /* APNSMobileUITests */,
+				99E7A2EA1F666C5C0070DBD1 /* APNSMobileUITests */,
 				FAC493CE1EDE972F00D01A0A /* Products */,
 				340D3A27626128E8B8B89263 /* Pods */,
 				18D880FD34624B94ED289E04 /* Frameworks */,
@@ -138,8 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				FAC493CD1EDE972F00D01A0A /* APNSMobile.app */,
-				FAC493E11EDE972F00D01A0A /* APNSMobileTests.xctest */,
-				FAC493EC1EDE972F00D01A0A /* APNSMobileUITests.xctest */,
+				99E7A2DB1F666C540070DBD1 /* APNSMobileTests.xctest */,
+				99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,16 +158,18 @@
 		FAC493CF1EDE972F00D01A0A /* APNSMobile */ = {
 			isa = PBXGroup;
 			children = (
+				9960FBCC1F610A4C00D41649 /* APNSMobile-Swift.h */,
+				99B628EC1F42CF210086B006 /* Certificates-Dev.p12 */,
+				999C98661F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 */,
 				FAC493D01EDE972F00D01A0A /* AppDelegate.swift */,
+				FA49C37F1F04DE410036116A /* JSONFileManager.swift */,
 				FA2647AB1EF163D000E6608A /* PayloadSelectTableViewController.swift */,
 				FADA10D21EE3F5A9002D0441 /* APNSFormViewController.swift */,
-				FA2647A91EF157A600E6608A /* NotificationPayload.apns */,
+				FA49C3811F04DF550036116A /* templates */,
 				FAC493FE1EDE974100D01A0A /* APNSManager.swift */,
 				FAC493D41EDE972F00D01A0A /* Main.storyboard */,
 				FAC493D71EDE972F00D01A0A /* Assets.xcassets */,
 				FAC493D91EDE972F00D01A0A /* LaunchScreen.storyboard */,
-				FAC494021EDE9ADA00D01A0A /* Certificates-Dev-APNS.p12 */,
-				FA5A42F21EF69B150094BB5F /* Certificates.p12 */,
 				FAC493DC1EDE972F00D01A0A /* Info.plist */,
 			);
 			path = APNSMobile;
@@ -171,18 +184,51 @@
 			path = APNSMobileTests;
 			sourceTree = "<group>";
 		};
-		FAC493EF1EDE972F00D01A0A /* APNSMobileUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FAC493F01EDE972F00D01A0A /* APNSMobileUITests.swift */,
-				FAC493F21EDE972F00D01A0A /* Info.plist */,
-			);
-			path = APNSMobileUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		99E7A2DA1F666C540070DBD1 /* APNSMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99E7A2E21F666C540070DBD1 /* Build configuration list for PBXNativeTarget "APNSMobileTests" */;
+			buildPhases = (
+				5D6C3CC7D28D9609DFF44651 /* [CP] Check Pods Manifest.lock */,
+				99E7A2D71F666C540070DBD1 /* Sources */,
+				99E7A2D81F666C540070DBD1 /* Frameworks */,
+				99E7A2D91F666C540070DBD1 /* Resources */,
+				930FE51117FDFC0182148438 /* [CP] Embed Pods Frameworks */,
+				A757E8B1F3ADA4276CADDDCB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99E7A2E11F666C540070DBD1 /* PBXTargetDependency */,
+			);
+			name = APNSMobileTests;
+			productName = APNSMobileTests;
+			productReference = 99E7A2DB1F666C540070DBD1 /* APNSMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99E7A2E81F666C5C0070DBD1 /* APNSMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99E7A2F01F666C5C0070DBD1 /* Build configuration list for PBXNativeTarget "APNSMobileUITests" */;
+			buildPhases = (
+				C514EED8D6E44F47C9A4D757 /* [CP] Check Pods Manifest.lock */,
+				99E7A2E51F666C5C0070DBD1 /* Sources */,
+				99E7A2E61F666C5C0070DBD1 /* Frameworks */,
+				99E7A2E71F666C5C0070DBD1 /* Resources */,
+				CFDA6CDCEB5D8785D22FA2C7 /* [CP] Embed Pods Frameworks */,
+				D6F727394BF14A3F14D196BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99E7A2EF1F666C5C0070DBD1 /* PBXTargetDependency */,
+			);
+			name = APNSMobileUITests;
+			productName = APNSMobileUITests;
+			productReference = 99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		FAC493CC1EDE972F00D01A0A /* APNSMobile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC493F51EDE972F00D01A0A /* Build configuration list for PBXNativeTarget "APNSMobile" */;
@@ -203,74 +249,32 @@
 			productReference = FAC493CD1EDE972F00D01A0A /* APNSMobile.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FAC493E01EDE972F00D01A0A /* APNSMobileTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAC493F81EDE972F00D01A0A /* Build configuration list for PBXNativeTarget "APNSMobileTests" */;
-			buildPhases = (
-				E1327AC0F4BCFFC8D8A3C32B /* [CP] Check Pods Manifest.lock */,
-				FAC493DD1EDE972F00D01A0A /* Sources */,
-				FAC493DE1EDE972F00D01A0A /* Frameworks */,
-				FAC493DF1EDE972F00D01A0A /* Resources */,
-				A25DC5D71B9B4DD8CDB1A2D0 /* [CP] Embed Pods Frameworks */,
-				839F61EE4764FDE48221BD70 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAC493E31EDE972F00D01A0A /* PBXTargetDependency */,
-			);
-			name = APNSMobileTests;
-			productName = APNSMobileTests;
-			productReference = FAC493E11EDE972F00D01A0A /* APNSMobileTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FAC493EB1EDE972F00D01A0A /* APNSMobileUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAC493FB1EDE972F00D01A0A /* Build configuration list for PBXNativeTarget "APNSMobileUITests" */;
-			buildPhases = (
-				2CB494197A3CEED90FAD7D34 /* [CP] Check Pods Manifest.lock */,
-				FAC493E81EDE972F00D01A0A /* Sources */,
-				FAC493E91EDE972F00D01A0A /* Frameworks */,
-				FAC493EA1EDE972F00D01A0A /* Resources */,
-				FD4E35ED3796BAFF39B17B76 /* [CP] Embed Pods Frameworks */,
-				BF7EAB19F29FD9CD656E6759 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAC493EE1EDE972F00D01A0A /* PBXTargetDependency */,
-			);
-			name = APNSMobileUITests;
-			productName = APNSMobileUITests;
-			productReference = FAC493EC1EDE972F00D01A0A /* APNSMobileUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FAC493C51EDE972F00D01A0A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Emirates;
 				TargetAttributes = {
+					99E7A2DA1F666C540070DBD1 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = U8355NX55G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC493CC1EDE972F00D01A0A;
+					};
+					99E7A2E81F666C5C0070DBD1 = {
+						CreatedOnToolsVersion = 9.0;
+						DevelopmentTeam = U8355NX55G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAC493CC1EDE972F00D01A0A;
+					};
 					FAC493CC1EDE972F00D01A0A = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 747Z352EUZ;
 						ProvisioningStyle = Manual;
-					};
-					FAC493E01EDE972F00D01A0A = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = U8355NX55G;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FAC493CC1EDE972F00D01A0A;
-					};
-					FAC493EB1EDE972F00D01A0A = {
-						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = U8355NX55G;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FAC493CC1EDE972F00D01A0A;
 					};
 				};
 			};
@@ -288,37 +292,37 @@
 			projectRoot = "";
 			targets = (
 				FAC493CC1EDE972F00D01A0A /* APNSMobile */,
-				FAC493E01EDE972F00D01A0A /* APNSMobileTests */,
-				FAC493EB1EDE972F00D01A0A /* APNSMobileUITests */,
+				99E7A2DA1F666C540070DBD1 /* APNSMobileTests */,
+				99E7A2E81F666C5C0070DBD1 /* APNSMobileUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		99E7A2D91F666C540070DBD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99E7A2E71F666C5C0070DBD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC493CB1EDE972F00D01A0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC494031EDE9ADA00D01A0A /* Certificates-Dev-APNS.p12 in Resources */,
-				FA2647AA1EF1583100E6608A /* NotificationPayload.apns in Resources */,
+				FA49C3821F04DF550036116A /* templates in Resources */,
+				999C98671F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 in Resources */,
 				FAC493DB1EDE972F00D01A0A /* LaunchScreen.storyboard in Resources */,
-				FA5A42F31EF69B150094BB5F /* Certificates.p12 in Resources */,
 				FAC493D81EDE972F00D01A0A /* Assets.xcassets in Resources */,
+				99B628ED1F42CFB40086B006 /* Certificates-Dev.p12 in Resources */,
 				FAC493D61EDE972F00D01A0A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC493DF1EDE972F00D01A0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC493EA1EDE972F00D01A0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,28 +335,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APNSMobile-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2CB494197A3CEED90FAD7D34 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2F07491CA68BD05D62C22B43 /* [CP] Embed Pods Frameworks */ = {
@@ -361,9 +353,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobile/Pods-APNSMobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -385,22 +380,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobile/Pods-APNSMobile-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		839F61EE4764FDE48221BD70 /* [CP] Copy Pods Resources */ = {
+		5D6C3CC7D28D9609DFF44651 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APNSMobileTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A25DC5D71B9B4DD8CDB1A2D0 /* [CP] Embed Pods Frameworks */ = {
+		930FE51117FDFC0182148438 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,7 +413,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF7EAB19F29FD9CD656E6759 /* [CP] Copy Pods Resources */ = {
+		A757E8B1F3ADA4276CADDDCB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,25 +425,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E1327AC0F4BCFFC8D8A3C32B /* [CP] Check Pods Manifest.lock */ = {
+		C514EED8D6E44F47C9A4D757 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APNSMobileUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD4E35ED3796BAFF39B17B76 /* [CP] Embed Pods Frameworks */ = {
+		CFDA6CDCEB5D8785D22FA2C7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,48 +461,63 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D6F727394BF14A3F14D196BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		99E7A2D71F666C540070DBD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99E7A2E51F666C5C0070DBD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99E7A2EC1F666C5C0070DBD1 /* APNSMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FAC493C91EDE972F00D01A0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FAC493FF1EDE974100D01A0A /* APNSManager.swift in Sources */,
+				FA49C3801F04DE410036116A /* JSONFileManager.swift in Sources */,
 				FADA10D31EE3F5A9002D0441 /* APNSFormViewController.swift in Sources */,
 				FA2647AC1EF163D000E6608A /* PayloadSelectTableViewController.swift in Sources */,
 				FAC493D11EDE972F00D01A0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAC493DD1EDE972F00D01A0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAC493E61EDE972F00D01A0A /* APNSMobileTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC493E81EDE972F00D01A0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAC493F11EDE972F00D01A0A /* APNSMobileUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		FAC493E31EDE972F00D01A0A /* PBXTargetDependency */ = {
+		99E7A2E11F666C540070DBD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FAC493CC1EDE972F00D01A0A /* APNSMobile */;
-			targetProxy = FAC493E21EDE972F00D01A0A /* PBXContainerItemProxy */;
+			targetProxy = 99E7A2E01F666C540070DBD1 /* PBXContainerItemProxy */;
 		};
-		FAC493EE1EDE972F00D01A0A /* PBXTargetDependency */ = {
+		99E7A2EF1F666C5C0070DBD1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FAC493CC1EDE972F00D01A0A /* APNSMobile */;
-			targetProxy = FAC493ED1EDE972F00D01A0A /* PBXContainerItemProxy */;
+			targetProxy = 99E7A2EE1F666C5C0070DBD1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,6 +541,98 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		99E7A2E31F666C540070DBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 258B134A437EC704B4A71BCA /* Pods-APNSMobileTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8355NX55G;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = APNSMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSMobile.app/APNSMobile";
+			};
+			name = Debug;
+		};
+		99E7A2E41F666C540070DBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B675FBAB304F6918B905441 /* Pods-APNSMobileTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8355NX55G;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = APNSMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSMobile.app/APNSMobile";
+			};
+			name = Release;
+		};
+		99E7A2F11F666C5C0070DBD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA44080D5C78C81F84132AD2 /* Pods-APNSMobileUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8355NX55G;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = APNSMobileUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4140acf-1a43-4b2e-a004-1ae2c89c73fb";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = APNSMobile;
+			};
+			name = Debug;
+		};
+		99E7A2F21F666C5C0070DBD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B691124705A87DA4B3BB42A /* Pods-APNSMobileUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U8355NX55G;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = APNSMobileUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f4140acf-1a43-4b2e-a004-1ae2c89c73fb";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = APNSMobile;
+			};
+			name = Release;
+		};
 		FAC493F31EDE972F00D01A0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -534,7 +642,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -542,7 +652,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -584,7 +698,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -592,7 +708,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -631,7 +751,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f4140acf-1a43-4b2e-a004-1ae2c89c73fb";
 				PROVISIONING_PROFILE_SPECIFIER = "EK Development Profile";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "APNSMobile-Swift.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -648,75 +770,33 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f4140acf-1a43-4b2e-a004-1ae2c89c73fb";
 				PROVISIONING_PROFILE_SPECIFIER = "EK Development Profile";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		FAC493F91EDE972F00D01A0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 258B134A437EC704B4A71BCA /* Pods-APNSMobileTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = U8355NX55G;
-				INFOPLIST_FILE = APNSMobileTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.APNSMobileTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSMobile.app/APNSMobile";
-			};
-			name = Debug;
-		};
-		FAC493FA1EDE972F00D01A0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B675FBAB304F6918B905441 /* Pods-APNSMobileTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = U8355NX55G;
-				INFOPLIST_FILE = APNSMobileTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.APNSMobileTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSMobile.app/APNSMobile";
-			};
-			name = Release;
-		};
-		FAC493FC1EDE972F00D01A0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA44080D5C78C81F84132AD2 /* Pods-APNSMobileUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = U8355NX55G;
-				INFOPLIST_FILE = APNSMobileUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.APNSMobileUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = APNSMobile;
-			};
-			name = Debug;
-		};
-		FAC493FD1EDE972F00D01A0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B691124705A87DA4B3BB42A /* Pods-APNSMobileUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = U8355NX55G;
-				INFOPLIST_FILE = APNSMobileUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.APNSMobileUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = APNSMobile;
+				SWIFT_OBJC_BRIDGING_HEADER = "APNSMobile-Swift.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		99E7A2E21F666C540070DBD1 /* Build configuration list for PBXNativeTarget "APNSMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99E7A2E31F666C540070DBD1 /* Debug */,
+				99E7A2E41F666C540070DBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99E7A2F01F666C5C0070DBD1 /* Build configuration list for PBXNativeTarget "APNSMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99E7A2F11F666C5C0070DBD1 /* Debug */,
+				99E7A2F21F666C5C0070DBD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FAC493C81EDE972F00D01A0A /* Build configuration list for PBXProject "APNSMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -731,24 +811,6 @@
 			buildConfigurations = (
 				FAC493F61EDE972F00D01A0A /* Debug */,
 				FAC493F71EDE972F00D01A0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAC493F81EDE972F00D01A0A /* Build configuration list for PBXNativeTarget "APNSMobileTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAC493F91EDE972F00D01A0A /* Debug */,
-				FAC493FA1EDE972F00D01A0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAC493FB1EDE972F00D01A0A /* Build configuration list for PBXNativeTarget "APNSMobileUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAC493FC1EDE972F00D01A0A /* Debug */,
-				FAC493FD1EDE972F00D01A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -118,7 +118,7 @@ public struct ApplePushMessage {
     /// Message Id
     public let messageId:String = UUID().uuidString
     /// Application BundleID
-    public let topic:String?
+    public let topic:String
     /// APNS Priority 5 or 10
     public let priority:Int
     /// APNS Payload aps {...}
@@ -156,7 +156,7 @@ public struct ApplePushMessage {
         return try APNSNetwork(session:session).sendPushWith(message: self)
     }
     
-    public init(topic:String? = nil, priority:Int, payload:Dictionary<String,Any>, deviceToken:String, certificatePath:String, passphrase:String, sandbox:Bool = true) {
+    public init(topic:String, priority:Int, payload:Dictionary<String,Any>, deviceToken:String, certificatePath:String, passphrase:String, sandbox:Bool = true) {
         self.topic = topic
         self.priority = priority
         self.payload = payload
@@ -198,7 +198,7 @@ open class APNSNetwork:NSObject {
                                 networkError: message.networkError)
     }
     
-    internal func sendPushWith(topic:String?, priority:Int, payload:Dictionary<String,Any>, deviceToken:String, certificatePath:String, passphrase:String, sandbox:Bool, responseBlock:((APNServiceResponse) -> ())?, networkError:((Error?)->())?) throws -> URLSessionDataTask? {
+    internal func sendPushWith(topic:String, priority:Int, payload:Dictionary<String,Any>, deviceToken:String, certificatePath:String, passphrase:String, sandbox:Bool, responseBlock:((APNServiceResponse) -> ())?, networkError:((Error?)->())?) throws -> URLSessionDataTask? {
         
         let url = serviceURLFor(sandbox: sandbox, token: deviceToken)
         var request = URLRequest(url: url)
@@ -211,7 +211,7 @@ open class APNSNetwork:NSObject {
         let data = try JSONSerialization.data(withJSONObject: payload, options: JSONSerialization.WritingOptions(rawValue: 0))
         request.httpBody = data
         request.httpMethod = "POST"
-        request.addValue(topic ?? "test", forHTTPHeaderField: "apns-topic")
+        request.addValue(topic, forHTTPHeaderField: "apns-topic")
         request.addValue("\(priority)", forHTTPHeaderField: "apns-priority")
         
         let task = APNSNetwork.session?.dataTask(with: request, completionHandler:{ (data, response, err) -> Void in

@@ -8,7 +8,6 @@
 
 import UIKit
 import Eureka
-import CryptoSwift
 
 class APNSFormViewController: FormViewController {
     var payload :String?
@@ -22,6 +21,17 @@ class APNSFormViewController: FormViewController {
     
     let tokenPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first?.appending("/token")
     
+    func sha256(data: Data) -> Data {
+        var digestData = Data(count: Int(CC_SHA256_DIGEST_LENGTH))
+        
+        _ = digestData.withUnsafeMutableBytes {digestBytes in
+            data.withUnsafeBytes {messageBytes in
+                CC_SHA256(messageBytes, CC_LONG(data.count), digestBytes)
+            }
+        }
+        return digestData
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,14 +39,11 @@ class APNSFormViewController: FormViewController {
             try! FileManager.default.createDirectory(atPath: tokenPath!, withIntermediateDirectories: true, attributes: nil)
         }
         
-        if !FileManager.default.fileExists(atPath: path!) {
-            try! FileManager.default.createDirectory(atPath: path!, withIntermediateDirectories: true, attributes: nil)
-        }
+  
         
-        payload = try! String(contentsOf: Bundle.main.url(forResource: "NotificationPayload", withExtension: "apns")!)
-        
+ 
 
-        deviceToken = UserDefaults.standard.object(forKey: "token") as? String ?? "2D71256D9F7587CCDD195303185DB91D835EEBD32CB36081C6E65B0984C5EBFD"
+        deviceToken = UserDefaults.standard.object(forKey: "token") as? String ?? "2DAED506D2C0E6E483B706CF0DD580813973AACAA71DE927A020398F30D5D7DA"
         
         
         
@@ -77,10 +84,14 @@ class APNSFormViewController: FormViewController {
         NotificationCenter.default.addObserver(forName: .loadObject, object: nil, queue: nil) { (noti) in
             if let row = self.form.rowBy(tag: "payload") as? TextAreaRow {
                 row.value = noti.userInfo?["payload"] as? String
-                row.updateCell()
+                row.reload(with: .none)
+
             }
+            
+   
         }
     }
+    
     
 
     func send(delay:Int=0) {
@@ -91,19 +102,20 @@ class APNSFormViewController: FormViewController {
         
         
         DispatchQueue.global().asyncAfter(deadline: .now() + .seconds(delay)) {
-            let str = Bundle.main.path(forResource: self.sandbox ? "Certificates-Dev-APNS" : "Certificates", ofType: "p12")!
-            var mess = ApplePushMessage(topic: "com.emirates.enterprise.EKiPhone",
+            let str = Bundle.main.path(forResource: self.sandbox ? "Certificates-Dev" : "CertificatesDev_ENT", ofType: "p12")!
+            var mess = ApplePushMessage(topic: "com.emirates.enterprise.EKiPhone.dev",
                                         priority: 10,
                                         payload: payload,
                                         deviceToken: self.deviceToken!,
                                         certificatePath:str,
-                                        passphrase: self.sandbox ? "12345":"123456",
+                                        passphrase: self.sandbox ? "12345":"123123",
                                         sandbox: self.sandbox)
             
             mess.responseBlock = { response in
                 print(response)
-                
-                let filePath = "\(self.path!)/\(ps.md5())"
+                let testHash = self.sha256(data:ps.data(using: .utf8)!)
+           
+                let filePath = "\(self.path!)/\(testHash.map { String(format: "%02hhx", $0) }.joined())"
                 print(filePath)
                 try! ps.write(toFile: filePath, atomically: true, encoding: .utf8)
             }
