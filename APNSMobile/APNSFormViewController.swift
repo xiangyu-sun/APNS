@@ -14,7 +14,7 @@ class APNSFormViewController: FormViewController {
     var deviceToken :String?
     var certName :String?
     var topic: String?
-
+    var sandBox = true
     let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first?.appending("/jsons")
     
     let tokenPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first?.appending("/token")
@@ -66,14 +66,21 @@ class APNSFormViewController: FormViewController {
                 self.payload = text.value
             })
             
+            
             <<< PickerInlineRow<String>() {
                 $0.title = "Certificate"
                 $0.value = self.certName
-                $0.options = CertificatesManager.shared.configuration.first?.value.keys.map{$0} ?? []
+                $0.options = CertificatesManager.shared.configuration.flatMap{ $1.keys.first }
                 }.onChange({ (picker) in
                     self.certName = picker.value
                 })
-            
+            <<< SwitchRow(){
+                $0.title = "Sandbox"
+                $0.value = self.sandBox
+                }.onChange({ (on) in
+                   self.sandBox = on.value ?? false
+                })
+
             <<< ButtonRow (){
                 $0.title = "Send"
                 }.onCellSelection { cell, row in
@@ -120,7 +127,7 @@ class APNSFormViewController: FormViewController {
                                         deviceToken: self.deviceToken!,
                                         certificatePath:str,
                                         passphrase: passphrase,
-                                        sandbox: certName.hasSuffix("sandbox"))
+                                        sandbox: self.sandBox)
             
             mess.responseBlock = { response in
                 print(response)

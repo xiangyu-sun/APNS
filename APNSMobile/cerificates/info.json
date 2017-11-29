@@ -1,3 +1,4 @@
 {
-    "com.emirates.enterprise.EKiPhone.dev":{"Certificates-sandbox":"12345","CertificatesDev_ENT":"123123"}
+    "com.emirates.enterprise.EKiPhone.dev":{"CertificatesDev":"123123"},
+    "com.emirates.enterprise.EKiPhone.stg":{"CertificatesSTGDev":"123123"}
 }
