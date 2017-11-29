@@ -7,7 +7,7 @@ target 'APNSMobile' do
 
   # Pods for APNSMobile
 
-  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'feature/Xcode9-Swift4'
+  pod 'Eureka'
   
   target 'APNSMobileTests' do
     inherit! :search_paths

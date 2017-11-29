@@ -28,6 +28,9 @@ class JSONFileManager {
     func reloadData() {
         let JSONCacheFolderPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!.appending("/jsons")
         do {
+            if !FileManager.default.fileExists(atPath: JSONCacheFolderPath){
+                try FileManager.default.createDirectory(atPath: JSONCacheFolderPath, withIntermediateDirectories: true, attributes: nil)
+            }
             userContents = try FileManager.default.contentsOfDirectory(atPath: JSONCacheFolderPath).map({ (path) in
                 let filePath = JSONCacheFolderPath.appending("/\(path)")
                 let att = try FileManager.default.attributesOfItem(atPath: filePath)

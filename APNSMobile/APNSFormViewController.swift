@@ -12,11 +12,9 @@ import Eureka
 class APNSFormViewController: FormViewController {
     var payload :String?
     var deviceToken :String?
-    var sandbox = UserDefaults.standard.bool(forKey: "sandbox"){
-        didSet{
-            UserDefaults.standard.set(sandbox, forKey: "sandbox")
-        }
-    }
+    var certName :String?
+    var topic: String?
+
     let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first?.appending("/jsons")
     
     let tokenPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first?.appending("/token")
@@ -38,16 +36,12 @@ class APNSFormViewController: FormViewController {
         if !FileManager.default.fileExists(atPath: tokenPath!) {
             try! FileManager.default.createDirectory(atPath: tokenPath!, withIntermediateDirectories: true, attributes: nil)
         }
-        
-  
-        
- 
-
         deviceToken = UserDefaults.standard.object(forKey: "token") as? String ?? "2DAED506D2C0E6E483B706CF0DD580813973AACAA71DE927A020398F30D5D7DA"
         
         
-        
-        
+        self.topic  = CertificatesManager.shared.configuration.keys.first
+
+        self.certName = CertificatesManager.shared.configuration.first?.value.keys.first
         
         form +++ Section("APNS")
             <<< TextRow(){ row in
@@ -57,6 +51,14 @@ class APNSFormViewController: FormViewController {
                 self.deviceToken = apns.value
                 UserDefaults.standard.setValue(apns.value, forKey: "token")
             })
+            <<< PickerInlineRow<String>() {
+                $0.title = "Topic"
+                $0.value = self.topic
+                $0.options = CertificatesManager.shared.configuration.keys.map{$0}
+                }.onChange({ (picker) in
+                    self.topic = picker.value
+                })
+            
             <<< TextAreaRow("payload") {
                 $0.textAreaHeight = .dynamic(initialTextViewHeight: 150)
                 $0.value = payload
@@ -64,12 +66,14 @@ class APNSFormViewController: FormViewController {
                 self.payload = text.value
             })
             
-            <<< SwitchRow (){
-                $0.title = "SandBox"
-                $0.value = self.sandbox
-        }.onChange({ (aSwitch) in
-            self.sandbox = aSwitch.value!
-        })
+            <<< PickerInlineRow<String>() {
+                $0.title = "Certificate"
+                $0.value = self.certName
+                $0.options = CertificatesManager.shared.configuration.first?.value.keys.map{$0} ?? []
+                }.onChange({ (picker) in
+                    self.certName = picker.value
+                })
+            
             <<< ButtonRow (){
                 $0.title = "Send"
                 }.onCellSelection { cell, row in
@@ -96,20 +100,27 @@ class APNSFormViewController: FormViewController {
 
     func send(delay:Int=0) {
         
-        guard let ps = self.payload, let payload = try! JSONSerialization.jsonObject(with: ps.data(using: .utf8)!, options: .allowFragments) as? [String:Any] else {
+        guard let ps = self.payload,
+            let payload = try! JSONSerialization.jsonObject(with: ps.data(using: .utf8)!, options: .allowFragments) as? [String:Any],
+            let topic = self.topic,
+            let certName = self.certName,
+            let passphrase = CertificatesManager.shared.configuration[topic]?[certName]
+            else {
             return
         }
         
         
         DispatchQueue.global().asyncAfter(deadline: .now() + .seconds(delay)) {
-            let str = Bundle.main.path(forResource: self.sandbox ? "Certificates-Dev" : "CertificatesDev_ENT", ofType: "p12")!
-            var mess = ApplePushMessage(topic: "com.emirates.enterprise.EKiPhone.dev",
+            
+        
+            let str = CertificatesManager.shared.pathForCert(name: certName)!
+            var mess = ApplePushMessage(topic: topic,
                                         priority: 10,
                                         payload: payload,
                                         deviceToken: self.deviceToken!,
                                         certificatePath:str,
-                                        passphrase: self.sandbox ? "12345":"123123",
-                                        sandbox: self.sandbox)
+                                        passphrase: passphrase,
+                                        sandbox: certName.hasSuffix("sandbox"))
             
             mess.responseBlock = { response in
                 print(response)

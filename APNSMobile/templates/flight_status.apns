@@ -4,14 +4,15 @@
         "sound" : "default",
         "badge" : 0
     },
-    "carrierCode" : "carrierCode",
-    "notificationType": "NP_FLIGHT_CHECKIN_OPEN",
-    "flightNo": "EK006",
-    "flightDate": "2017-05-12T04:10:00",
-    "pnr": "F284YW",
+    "carrierCode" : "EK",
+    "notificationType": "NP.FLIGHT.DEPARTURE",
+    "flightNo": "EK205",
+    "origin": "MXP",
+    "flightDate": "2017-08-15T04:10:00",
+    "departurecode" : "DXB",
     "_sd": "emirates://mytrip/123321",
     "lastName": "khan",
-    "origin": "LHR",
-    "destination": "DBX",
-    "skywardsId": "900098780"
+    "direction": "D",
+    "destination": "JFK",
+    "skywardsId": "510307582"
 }

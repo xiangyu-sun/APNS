@@ -10,9 +10,11 @@
 		0C73529169CD28A585026463 /* Pods_APNSMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB602F944475798E484297E1 /* Pods_APNSMobile.framework */; };
 		1354DE9D625AA7CEB17BC69A /* Pods_APNSMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A21F3C2746465C6E7D6986 /* Pods_APNSMobileUITests.framework */; };
 		5C4B899E876AB79336F3A013 /* Pods_APNSMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4484A7A371C7CC15F424DB /* Pods_APNSMobileTests.framework */; };
-		999C98671F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 999C98661F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 */; };
-		99B628ED1F42CFB40086B006 /* Certificates-Dev.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 99B628EC1F42CF210086B006 /* Certificates-Dev.p12 */; };
 		99E7A2EC1F666C5C0070DBD1 /* APNSMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */; };
+		99EAE5991F668E8300650979 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EAE5981F668E8300650979 /* PreviewView.swift */; };
+		99EAE59B1F668EA600650979 /* VNTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EAE59A1F668EA600650979 /* VNTextViewController.swift */; };
+		99EAE59E1F66927600650979 /* CertificatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EAE59D1F66927600650979 /* CertificatesManager.swift */; };
+		99EAE5A01F66979400650979 /* cerificates in Resources */ = {isa = PBXBuildFile; fileRef = 99EAE59C1F6691A700650979 /* cerificates */; };
 		FA2647AC1EF163D000E6608A /* PayloadSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2647AB1EF163D000E6608A /* PayloadSelectTableViewController.swift */; };
 		FA49C3801F04DE410036116A /* JSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C37F1F04DE410036116A /* JSONFileManager.swift */; };
 		FA49C3821F04DF550036116A /* templates in Resources */ = {isa = PBXBuildFile; fileRef = FA49C3811F04DF550036116A /* templates */; };
@@ -47,12 +49,14 @@
 		258B134A437EC704B4A71BCA /* Pods-APNSMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B675FBAB304F6918B905441 /* Pods-APNSMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests.release.xcconfig"; sourceTree = "<group>"; };
 		9960FBCC1F610A4C00D41649 /* APNSMobile-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APNSMobile-Swift.h"; sourceTree = SOURCE_ROOT; };
-		999C98661F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CertificatesDev_ENT.p12; sourceTree = "<group>"; };
-		99B628EC1F42CF210086B006 /* Certificates-Dev.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Certificates-Dev.p12"; sourceTree = "<group>"; };
 		99E7A2DB1F666C540070DBD1 /* APNSMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSMobileUITests.swift; sourceTree = "<group>"; };
 		99E7A2ED1F666C5C0070DBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99EAE5981F668E8300650979 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		99EAE59A1F668EA600650979 /* VNTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNTextViewController.swift; sourceTree = "<group>"; };
+		99EAE59C1F6691A700650979 /* cerificates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cerificates; sourceTree = "<group>"; };
+		99EAE59D1F66927600650979 /* CertificatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesManager.swift; sourceTree = "<group>"; };
 		A4C9EC6883818CCDC18EA008 /* Pods-APNSMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobile/Pods-APNSMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		AA44080D5C78C81F84132AD2 /* Pods-APNSMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB602F944475798E484297E1 /* Pods_APNSMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNSMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,12 +163,14 @@
 			isa = PBXGroup;
 			children = (
 				9960FBCC1F610A4C00D41649 /* APNSMobile-Swift.h */,
-				99B628EC1F42CF210086B006 /* Certificates-Dev.p12 */,
-				999C98661F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 */,
+				99EAE59C1F6691A700650979 /* cerificates */,
 				FAC493D01EDE972F00D01A0A /* AppDelegate.swift */,
 				FA49C37F1F04DE410036116A /* JSONFileManager.swift */,
 				FA2647AB1EF163D000E6608A /* PayloadSelectTableViewController.swift */,
 				FADA10D21EE3F5A9002D0441 /* APNSFormViewController.swift */,
+				99EAE59D1F66927600650979 /* CertificatesManager.swift */,
+				99EAE5981F668E8300650979 /* PreviewView.swift */,
+				99EAE59A1F668EA600650979 /* VNTextViewController.swift */,
 				FA49C3811F04DF550036116A /* templates */,
 				FAC493FE1EDE974100D01A0A /* APNSManager.swift */,
 				FAC493D41EDE972F00D01A0A /* Main.storyboard */,
@@ -318,10 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA49C3821F04DF550036116A /* templates in Resources */,
-				999C98671F5FDB8E00E324F0 /* CertificatesDev_ENT.p12 in Resources */,
 				FAC493DB1EDE972F00D01A0A /* LaunchScreen.storyboard in Resources */,
 				FAC493D81EDE972F00D01A0A /* Assets.xcassets in Resources */,
-				99B628ED1F42CFB40086B006 /* Certificates-Dev.p12 in Resources */,
+				99EAE5A01F66979400650979 /* cerificates in Resources */,
 				FAC493D61EDE972F00D01A0A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,10 +504,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC493FF1EDE974100D01A0A /* APNSManager.swift in Sources */,
+				99EAE59E1F66927600650979 /* CertificatesManager.swift in Sources */,
 				FA49C3801F04DE410036116A /* JSONFileManager.swift in Sources */,
 				FADA10D31EE3F5A9002D0441 /* APNSFormViewController.swift in Sources */,
+				99EAE59B1F668EA600650979 /* VNTextViewController.swift in Sources */,
 				FA2647AC1EF163D000E6608A /* PayloadSelectTableViewController.swift in Sources */,
 				FAC493D11EDE972F00D01A0A /* AppDelegate.swift in Sources */,
+				99EAE5991F668E8300650979 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,7 +687,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -729,7 +737,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -19,7 +19,21 @@ class PayloadSelectTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.clearsSelectionOnViewWillAppear = false
-
+        
+        
+        if #available(iOS 11, *) {
+            loadVNVC()
+        } else {
+            
+        }
+    }
+    
+    func loadVNVC()  {
+        let vn = self.storyboard!.instantiateViewController(withIdentifier: "VNTextViewNavigationController")
+        var vcs = self.tabBarController?.viewControllers
+        vcs?.append(vn)
+       self.tabBarController?.setViewControllers(vcs, animated: false)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -65,7 +79,7 @@ class PayloadSelectTableViewController: UITableViewController {
         
         NotificationCenter.default.post(name: .loadObject, object: self, userInfo: ["payload":ob])
         
-        tabBarController?.selectedViewController = tabBarController?.viewControllers?.last
+        tabBarController?.selectedViewController = tabBarController?.viewControllers?[1]
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

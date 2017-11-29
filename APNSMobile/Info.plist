@@ -56,5 +56,7 @@
 	</array>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Just use</string>
 </dict>
 </plist>
