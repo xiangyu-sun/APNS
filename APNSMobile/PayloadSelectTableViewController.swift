@@ -3,7 +3,7 @@
 //  APNSMobile
 //
 //  Created by 孙翔宇 on 6/14/17.
-//  Copyright © 2017 Emirates. All rights reserved.
+//  Copyright © 2017 Uriphium. All rights reserved.
 //
 
 import UIKit

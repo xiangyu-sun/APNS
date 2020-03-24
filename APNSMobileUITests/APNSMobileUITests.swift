@@ -3,7 +3,7 @@
 //  APNSMobileUITests
 //
 //  Created by xiangyu sun on 9/11/17.
-//  Copyright © 2017 Emirates. All rights reserved.
+//  Copyright © 2017 Uriphium. All rights reserved.
 //
 
 import XCTest

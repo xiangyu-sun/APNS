@@ -1,4 +1,4 @@
 {
-    "com.emirates.enterprise.EKiPhone.dev":{"CertificatesDev":"123123"},
-    "com.emirates.enterprise.EKiPhone.stg":{"CertificatesSTGDev":"123123"}
+    "com.enterprise.app.dev":{"CertificatesDev":"123123"},
+    "com.enterprise.app.stg":{"CertificatesSTGDev":"123123"}
 }

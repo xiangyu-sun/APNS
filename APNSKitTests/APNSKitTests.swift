@@ -1,14 +1,15 @@
 //
-//  APNSMobileTests.swift
-//  APNSMobileTests
+//  APNSKitTests.swift
+//  APNSKitTests
 //
-//  Created by xiangyu sun on 9/11/17.
-//  Copyright © 2017 Uriphium. All rights reserved.
+//  Created by xiangyu sun on 4/27/18.
+//  Copyright © 2018 Uriphium. All rights reserved.
 //
 
 import XCTest
+@testable import APNSKit
 
-class APNSMobileTests: XCTestCase {
+class APNSKitTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

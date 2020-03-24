@@ -3,7 +3,7 @@
 //  APNSMobile
 //
 //  Created by xiangyu sun on 9/7/17.
-//  Copyright © 2017 Emirates. All rights reserved.
+//  Copyright © 2017 Uriphium. All rights reserved.
 //
 
 #ifndef Objc_Bridge_h

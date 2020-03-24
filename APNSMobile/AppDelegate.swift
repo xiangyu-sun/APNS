@@ -3,7 +3,7 @@
 //  APNSMobile
 //
 //  Created by Alex on 5/31/17.
-//  Copyright © 2017 Emirates. All rights reserved.
+//  Copyright © 2017 Uriphium. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let _ = JSONFileManager.shared
-        UserDefaults.standard.set("746705477FACD45A4F8A5DCE06D9573E8A4B27F5D0F34A1B46EB8E529E216C36", forKey: "token")
+        //UserDefaults.standard.set("746705477FACD45A4F8A5DCE06D9573E8A4B27F5D0F34A1B46EB8E529E216C36", forKey: "token")
         
         return true
     }
