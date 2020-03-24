@@ -34,41 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9931EBC120D404280070067B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9931EBB920D404270070067B /* APNSFactory.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 995E9BF220939A8400C45830;
-			remoteInfo = APNSFactory;
-		};
-		9931EBC320D404280070067B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9931EBB920D404270070067B /* APNSFactory.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 995E9C0420939A8600C45830;
-			remoteInfo = APNSFactoryTests;
-		};
-		9931EBC520D404280070067B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9931EBB920D404270070067B /* APNSFactory.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 995E9C0F20939A8600C45830;
-			remoteInfo = APNSFactoryUITests;
-		};
-		9931EBC720D404280070067B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9931EBB920D404270070067B /* APNSFactory.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 99F2231D2093B95D00EEE531;
-			remoteInfo = APNSKit_Mac;
-		};
-		9931EBC920D404280070067B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9931EBB920D404270070067B /* APNSFactory.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 99F223252093B95D00EEE531;
-			remoteInfo = APNSKit_MacTests;
-		};
 		99E7A2E01F666C540070DBD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FAC493C51EDE972F00D01A0A /* Project object */;
@@ -125,7 +90,6 @@
 		0B691124705A87DA4B3BB42A /* Pods-APNSMobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests.release.xcconfig"; sourceTree = "<group>"; };
 		258B134A437EC704B4A71BCA /* Pods-APNSMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2B675FBAB304F6918B905441 /* Pods-APNSMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileTests/Pods-APNSMobileTests.release.xcconfig"; sourceTree = "<group>"; };
-		9931EBB920D404270070067B /* APNSFactory.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = APNSFactory.xcodeproj; path = APNSFactory/APNSFactory.xcodeproj; sourceTree = "<group>"; };
 		9960FBCC1F610A4C00D41649 /* APNSMobile-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APNSMobile-Swift.h"; sourceTree = SOURCE_ROOT; };
 		99E7A2DB1F666C540070DBD1 /* APNSMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,18 +194,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9931EBBA20D404270070067B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9931EBC220D404280070067B /* APNSFactory.app */,
-				9931EBC420D404280070067B /* APNSFactoryTests.xctest */,
-				9931EBC620D404280070067B /* APNSFactoryUITests.xctest */,
-				9931EBC820D404280070067B /* APNSKit_Mac.framework */,
-				9931EBCA20D404280070067B /* APNSKit_MacTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		99E7A2EA1F666C5C0070DBD1 /* APNSMobileUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,7 +227,6 @@
 		FAC493C41EDE972F00D01A0A = {
 			isa = PBXGroup;
 			children = (
-				9931EBB920D404270070067B /* APNSFactory.xcodeproj */,
 				FAC493CF1EDE972F00D01A0A /* APNSMobile */,
 				FAC493E41EDE972F00D01A0A /* APNSMobileTests */,
 				99E7A2EA1F666C5C0070DBD1 /* APNSMobileUITests */,
@@ -484,18 +435,13 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = FAC493C41EDE972F00D01A0A;
 			productRefGroup = FAC493CE1EDE972F00D01A0A /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9931EBBA20D404270070067B /* Products */;
-					ProjectRef = 9931EBB920D404270070067B /* APNSFactory.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				FAC493CC1EDE972F00D01A0A /* APNSMobile */,
@@ -506,44 +452,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9931EBC220D404280070067B /* APNSFactory.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = APNSFactory.app;
-			remoteRef = 9931EBC120D404280070067B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9931EBC420D404280070067B /* APNSFactoryTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APNSFactoryTests.xctest;
-			remoteRef = 9931EBC320D404280070067B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9931EBC620D404280070067B /* APNSFactoryUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APNSFactoryUITests.xctest;
-			remoteRef = 9931EBC520D404280070067B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9931EBC820D404280070067B /* APNSKit_Mac.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = APNSKit_Mac.framework;
-			remoteRef = 9931EBC720D404280070067B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9931EBCA20D404280070067B /* APNSKit_MacTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = APNSKit_MacTests.xctest;
-			remoteRef = 9931EBC920D404280070067B /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		99E7A2D91F666C540070DBD1 /* Resources */ = {
