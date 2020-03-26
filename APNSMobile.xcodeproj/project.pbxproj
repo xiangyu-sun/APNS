@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C73529169CD28A585026463 /* Pods_APNSMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB602F944475798E484297E1 /* Pods_APNSMobile.framework */; };
 		1354DE9D625AA7CEB17BC69A /* Pods_APNSMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A21F3C2746465C6E7D6986 /* Pods_APNSMobileUITests.framework */; };
-		465D4329242C7B7900812A5F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 465D4328242C7B7900812A5F /* SwiftPackageProductDependency */; };
+		465D4329242C7B7900812A5F /* APNsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 465D4328242C7B7900812A5F /* APNsCore */; };
 		5C4B899E876AB79336F3A013 /* Pods_APNSMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4484A7A371C7CC15F424DB /* Pods_APNSMobileTests.framework */; };
 		99E7A2EC1F666C5C0070DBD1 /* APNSMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */; };
 		99EAE59E1F66927600650979 /* CertificatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EAE59D1F66927600650979 /* CertificatesManager.swift */; };
@@ -107,7 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C73529169CD28A585026463 /* Pods_APNSMobile.framework in Frameworks */,
-				465D4329242C7B7900812A5F /* BuildFile in Frameworks */,
+				465D4329242C7B7900812A5F /* APNsCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +254,7 @@
 			);
 			name = APNSMobile;
 			packageProductDependencies = (
-				465D4328242C7B7900812A5F /* SwiftPackageProductDependency */,
+				465D4328242C7B7900812A5F /* APNsCore */,
 			);
 			productName = APNSMobile;
 			productReference = FAC493CD1EDE972F00D01A0A /* APNSMobile.app */;
@@ -300,7 +300,7 @@
 			);
 			mainGroup = FAC493C41EDE972F00D01A0A;
 			packageReferences = (
-				465D4327242C7B7900812A5F /* RemoteSwiftPackageReference */,
+				465D4327242C7B7900812A5F /* XCRemoteSwiftPackageReference "APNsCore" */,
 			);
 			productRefGroup = FAC493CE1EDE972F00D01A0A /* Products */;
 			projectDirPath = "";
@@ -789,7 +789,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		465D4327242C7B7900812A5F /* RemoteSwiftPackageReference */ = {
+		465D4327242C7B7900812A5F /* XCRemoteSwiftPackageReference "APNsCore" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/xiangyu-sun/APNsCore.git";
 			requirement = {
@@ -800,9 +800,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		465D4328242C7B7900812A5F /* SwiftPackageProductDependency */ = {
+		465D4328242C7B7900812A5F /* APNsCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 465D4327242C7B7900812A5F /* RemoteSwiftPackageReference */;
+			package = 465D4327242C7B7900812A5F /* XCRemoteSwiftPackageReference "APNsCore" */;
 			productName = APNsCore;
 		};
 /* End XCSwiftPackageProductDependency section */

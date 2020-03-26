@@ -8,7 +8,8 @@
 
 import UIKit
 import Eureka
-import APNSKit
+import APNsCore
+
 enum Priority :Int{
     case conservesPower = 5
     case immediately = 10
