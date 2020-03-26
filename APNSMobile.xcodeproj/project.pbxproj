@@ -3,26 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0C73529169CD28A585026463 /* Pods_APNSMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB602F944475798E484297E1 /* Pods_APNSMobile.framework */; };
 		1354DE9D625AA7CEB17BC69A /* Pods_APNSMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A21F3C2746465C6E7D6986 /* Pods_APNSMobileUITests.framework */; };
+		465D4329242C7B7900812A5F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 465D4328242C7B7900812A5F /* SwiftPackageProductDependency */; };
 		5C4B899E876AB79336F3A013 /* Pods_APNSMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4484A7A371C7CC15F424DB /* Pods_APNSMobileTests.framework */; };
 		99E7A2EC1F666C5C0070DBD1 /* APNSMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */; };
-		99EAE5991F668E8300650979 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EAE5981F668E8300650979 /* PreviewView.swift */; };
-		99EAE59B1F668EA600650979 /* VNTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EAE59A1F668EA600650979 /* VNTextViewController.swift */; };
 		99EAE59E1F66927600650979 /* CertificatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EAE59D1F66927600650979 /* CertificatesManager.swift */; };
 		99EAE5A01F66979400650979 /* cerificates in Resources */ = {isa = PBXBuildFile; fileRef = 99EAE59C1F6691A700650979 /* cerificates */; };
-		99F222D92093B62E00EEE531 /* APNSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F222D02093B62E00EEE531 /* APNSKit.framework */; };
-		99F222E02093B62E00EEE531 /* APNSKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F222DF2093B62E00EEE531 /* APNSKitTests.swift */; };
-		99F222E22093B62E00EEE531 /* APNSKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F222D22093B62E00EEE531 /* APNSKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99F222E52093B62E00EEE531 /* APNSKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F222D02093B62E00EEE531 /* APNSKit.framework */; };
-		99F222E62093B62E00EEE531 /* APNSKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99F222D02093B62E00EEE531 /* APNSKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		99F222EE2093B63B00EEE531 /* APNSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC493FE1EDE974100D01A0A /* APNSManager.swift */; };
-		99F222F02093B71E00EEE531 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F222EF2093B71E00EEE531 /* Error.swift */; };
-		99F222F22093B74F00EEE531 /* APNSResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F222F12093B74F00EEE531 /* APNSResponse.swift */; };
 		FA2647AC1EF163D000E6608A /* PayloadSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2647AB1EF163D000E6608A /* PayloadSelectTableViewController.swift */; };
 		FA49C3801F04DE410036116A /* JSONFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA49C37F1F04DE410036116A /* JSONFileManager.swift */; };
 		FA49C3821F04DF550036116A /* templates in Resources */ = {isa = PBXBuildFile; fileRef = FA49C3811F04DF550036116A /* templates */; };
@@ -48,27 +39,6 @@
 			remoteGlobalIDString = FAC493CC1EDE972F00D01A0A;
 			remoteInfo = APNSMobile;
 		};
-		99F222DA2093B62E00EEE531 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAC493C51EDE972F00D01A0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99F222CF2093B62E00EEE531;
-			remoteInfo = APNSKit;
-		};
-		99F222DC2093B62E00EEE531 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAC493C51EDE972F00D01A0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAC493CC1EDE972F00D01A0A;
-			remoteInfo = APNSMobile;
-		};
-		99F222E32093B62E00EEE531 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAC493C51EDE972F00D01A0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 99F222CF2093B62E00EEE531;
-			remoteInfo = APNSKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,7 +48,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				99F222E62093B62E00EEE531 /* APNSKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,18 +64,8 @@
 		99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E7A2EB1F666C5C0070DBD1 /* APNSMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSMobileUITests.swift; sourceTree = "<group>"; };
 		99E7A2ED1F666C5C0070DBD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99EAE5981F668E8300650979 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
-		99EAE59A1F668EA600650979 /* VNTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNTextViewController.swift; sourceTree = "<group>"; };
 		99EAE59C1F6691A700650979 /* cerificates */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cerificates; sourceTree = "<group>"; };
 		99EAE59D1F66927600650979 /* CertificatesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesManager.swift; sourceTree = "<group>"; };
-		99F222D02093B62E00EEE531 /* APNSKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APNSKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99F222D22093B62E00EEE531 /* APNSKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APNSKit.h; sourceTree = "<group>"; };
-		99F222D32093B62E00EEE531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99F222D82093B62E00EEE531 /* APNSKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		99F222DF2093B62E00EEE531 /* APNSKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSKitTests.swift; sourceTree = "<group>"; };
-		99F222E12093B62E00EEE531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99F222EF2093B71E00EEE531 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		99F222F12093B74F00EEE531 /* APNSResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSResponse.swift; sourceTree = "<group>"; };
 		A4C9EC6883818CCDC18EA008 /* Pods-APNSMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobile/Pods-APNSMobile.debug.xcconfig"; sourceTree = "<group>"; };
 		AA44080D5C78C81F84132AD2 /* Pods-APNSMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNSMobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNSMobileUITests/Pods-APNSMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AB602F944475798E484297E1 /* Pods_APNSMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNSMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +82,6 @@
 		FAC493DC1EDE972F00D01A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC493E51EDE972F00D01A0A /* APNSMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNSMobileTests.swift; sourceTree = "<group>"; };
 		FAC493E71EDE972F00D01A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC493FE1EDE974100D01A0A /* APNSManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSManager.swift; sourceTree = "<group>"; };
 		FADA10D21EE3F5A9002D0441 /* APNSFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APNSFormViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,27 +102,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99F222CC2093B62E00EEE531 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99F222D52093B62E00EEE531 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99F222D92093B62E00EEE531 /* APNSKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAC493CA1EDE972F00D01A0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0C73529169CD28A585026463 /* Pods_APNSMobile.framework in Frameworks */,
-				99F222E52093B62E00EEE531 /* APNSKit.framework in Frameworks */,
+				465D4329242C7B7900812A5F /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,35 +146,12 @@
 			path = APNSMobileUITests;
 			sourceTree = "<group>";
 		};
-		99F222D12093B62E00EEE531 /* APNSKit */ = {
-			isa = PBXGroup;
-			children = (
-				FAC493FE1EDE974100D01A0A /* APNSManager.swift */,
-				99F222F12093B74F00EEE531 /* APNSResponse.swift */,
-				99F222EF2093B71E00EEE531 /* Error.swift */,
-				99F222D22093B62E00EEE531 /* APNSKit.h */,
-				99F222D32093B62E00EEE531 /* Info.plist */,
-			);
-			path = APNSKit;
-			sourceTree = "<group>";
-		};
-		99F222DE2093B62E00EEE531 /* APNSKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				99F222DF2093B62E00EEE531 /* APNSKitTests.swift */,
-				99F222E12093B62E00EEE531 /* Info.plist */,
-			);
-			path = APNSKitTests;
-			sourceTree = "<group>";
-		};
 		FAC493C41EDE972F00D01A0A = {
 			isa = PBXGroup;
 			children = (
 				FAC493CF1EDE972F00D01A0A /* APNSMobile */,
 				FAC493E41EDE972F00D01A0A /* APNSMobileTests */,
 				99E7A2EA1F666C5C0070DBD1 /* APNSMobileUITests */,
-				99F222D12093B62E00EEE531 /* APNSKit */,
-				99F222DE2093B62E00EEE531 /* APNSKitTests */,
 				FAC493CE1EDE972F00D01A0A /* Products */,
 				340D3A27626128E8B8B89263 /* Pods */,
 				18D880FD34624B94ED289E04 /* Frameworks */,
@@ -244,8 +164,6 @@
 				FAC493CD1EDE972F00D01A0A /* APNSMobile.app */,
 				99E7A2DB1F666C540070DBD1 /* APNSMobileTests.xctest */,
 				99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */,
-				99F222D02093B62E00EEE531 /* APNSKit.framework */,
-				99F222D82093B62E00EEE531 /* APNSKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,8 +178,6 @@
 				FA2647AB1EF163D000E6608A /* PayloadSelectTableViewController.swift */,
 				FADA10D21EE3F5A9002D0441 /* APNSFormViewController.swift */,
 				99EAE59D1F66927600650979 /* CertificatesManager.swift */,
-				99EAE5981F668E8300650979 /* PreviewView.swift */,
-				99EAE59A1F668EA600650979 /* VNTextViewController.swift */,
 				FA49C3811F04DF550036116A /* templates */,
 				FAC493D41EDE972F00D01A0A /* Main.storyboard */,
 				FAC493D71EDE972F00D01A0A /* Assets.xcassets */,
@@ -281,17 +197,6 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		99F222CD2093B62E00EEE531 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99F222E22093B62E00EEE531 /* APNSKit.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		99E7A2DA1F666C540070DBD1 /* APNSMobileTests */ = {
@@ -332,43 +237,6 @@
 			productReference = 99E7A2E91F666C5C0070DBD1 /* APNSMobileUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		99F222CF2093B62E00EEE531 /* APNSKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99F222E72093B62E00EEE531 /* Build configuration list for PBXNativeTarget "APNSKit" */;
-			buildPhases = (
-				99F222CB2093B62E00EEE531 /* Sources */,
-				99F222CC2093B62E00EEE531 /* Frameworks */,
-				99F222CD2093B62E00EEE531 /* Headers */,
-				99F222CE2093B62E00EEE531 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = APNSKit;
-			productName = APNSKit;
-			productReference = 99F222D02093B62E00EEE531 /* APNSKit.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		99F222D72093B62E00EEE531 /* APNSKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99F222EB2093B62E00EEE531 /* Build configuration list for PBXNativeTarget "APNSKitTests" */;
-			buildPhases = (
-				99F222D42093B62E00EEE531 /* Sources */,
-				99F222D52093B62E00EEE531 /* Frameworks */,
-				99F222D62093B62E00EEE531 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				99F222DB2093B62E00EEE531 /* PBXTargetDependency */,
-				99F222DD2093B62E00EEE531 /* PBXTargetDependency */,
-			);
-			name = APNSKitTests;
-			productName = APNSKitTests;
-			productReference = 99F222D82093B62E00EEE531 /* APNSKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		FAC493CC1EDE972F00D01A0A /* APNSMobile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC493F51EDE972F00D01A0A /* Build configuration list for PBXNativeTarget "APNSMobile" */;
@@ -383,9 +251,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				99F222E42093B62E00EEE531 /* PBXTargetDependency */,
 			);
 			name = APNSMobile;
+			packageProductDependencies = (
+				465D4328242C7B7900812A5F /* SwiftPackageProductDependency */,
+			);
 			productName = APNSMobile;
 			productReference = FAC493CD1EDE972F00D01A0A /* APNSMobile.app */;
 			productType = "com.apple.product-type.application";
@@ -412,17 +282,6 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = FAC493CC1EDE972F00D01A0A;
 					};
-					99F222CF2093B62E00EEE531 = {
-						CreatedOnToolsVersion = 9.3;
-						DevelopmentTeam = U8355NX55G;
-						ProvisioningStyle = Automatic;
-					};
-					99F222D72093B62E00EEE531 = {
-						CreatedOnToolsVersion = 9.3;
-						DevelopmentTeam = 46S3S784AR;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FAC493CC1EDE972F00D01A0A;
-					};
 					FAC493CC1EDE972F00D01A0A = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 46S3S784AR;
@@ -440,6 +299,9 @@
 				Base,
 			);
 			mainGroup = FAC493C41EDE972F00D01A0A;
+			packageReferences = (
+				465D4327242C7B7900812A5F /* RemoteSwiftPackageReference */,
+			);
 			productRefGroup = FAC493CE1EDE972F00D01A0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -447,8 +309,6 @@
 				FAC493CC1EDE972F00D01A0A /* APNSMobile */,
 				99E7A2DA1F666C540070DBD1 /* APNSMobileTests */,
 				99E7A2E81F666C5C0070DBD1 /* APNSMobileUITests */,
-				99F222CF2093B62E00EEE531 /* APNSKit */,
-				99F222D72093B62E00EEE531 /* APNSKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -462,20 +322,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		99E7A2E71F666C5C0070DBD1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99F222CE2093B62E00EEE531 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99F222D62093B62E00EEE531 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -520,17 +366,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobile/Pods-APNSMobile-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APNSMobile/Pods-APNSMobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APNSMobile/Pods-APNSMobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNSMobile/Pods-APNSMobile-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APNSMobile/Pods-APNSMobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5D6C3CC7D28D9609DFF44651 /* [CP] Check Pods Manifest.lock */ = {
@@ -587,24 +432,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99F222CB2093B62E00EEE531 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99F222F22093B74F00EEE531 /* APNSResponse.swift in Sources */,
-				99F222F02093B71E00EEE531 /* Error.swift in Sources */,
-				99F222EE2093B63B00EEE531 /* APNSManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99F222D42093B62E00EEE531 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99F222E02093B62E00EEE531 /* APNSKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FAC493C91EDE972F00D01A0A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -612,10 +439,8 @@
 				99EAE59E1F66927600650979 /* CertificatesManager.swift in Sources */,
 				FA49C3801F04DE410036116A /* JSONFileManager.swift in Sources */,
 				FADA10D31EE3F5A9002D0441 /* APNSFormViewController.swift in Sources */,
-				99EAE59B1F668EA600650979 /* VNTextViewController.swift in Sources */,
 				FA2647AC1EF163D000E6608A /* PayloadSelectTableViewController.swift in Sources */,
 				FAC493D11EDE972F00D01A0A /* AppDelegate.swift in Sources */,
-				99EAE5991F668E8300650979 /* PreviewView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,21 +456,6 @@
 			isa = PBXTargetDependency;
 			target = FAC493CC1EDE972F00D01A0A /* APNSMobile */;
 			targetProxy = 99E7A2EE1F666C5C0070DBD1 /* PBXContainerItemProxy */;
-		};
-		99F222DB2093B62E00EEE531 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 99F222CF2093B62E00EEE531 /* APNSKit */;
-			targetProxy = 99F222DA2093B62E00EEE531 /* PBXContainerItemProxy */;
-		};
-		99F222DD2093B62E00EEE531 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAC493CC1EDE972F00D01A0A /* APNSMobile */;
-			targetProxy = 99F222DC2093B62E00EEE531 /* PBXContainerItemProxy */;
-		};
-		99F222E42093B62E00EEE531 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 99F222CF2093B62E00EEE531 /* APNSKit */;
-			targetProxy = 99F222E32093B62E00EEE531 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -683,7 +493,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = APNSMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -706,7 +520,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = APNSMobileTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -728,7 +546,11 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = APNSMobileUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f4140acf-1a43-4b2e-a004-1ae2c89c73fb";
@@ -751,119 +573,17 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = APNSMobileUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobileUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "f4140acf-1a43-4b2e-a004-1ae2c89c73fb";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = APNSMobile;
-			};
-			name = Release;
-		};
-		99F222E82093B62E00EEE531 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Xiangyu Sun (33SG2D27XU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U8355NX55G;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = APNSKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		99F222E92093B62E00EEE531 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U8355NX55G;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = APNSKit/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSKit;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		99F222EC2093B62E00EEE531 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46S3S784AR;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = APNSKitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSMobile.app/APNSMobile";
-			};
-			name = Debug;
-		};
-		99F222ED2093B62E00EEE531 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46S3S784AR;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = APNSKitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/APNSMobile.app/APNSMobile";
 			};
 			name = Release;
 		};
@@ -970,7 +690,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -987,7 +708,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = APNSMobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1009,7 +733,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46S3S784AR;
 				INFOPLIST_FILE = APNSMobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.uriphium.APNSMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1041,24 +768,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99F222E72093B62E00EEE531 /* Build configuration list for PBXNativeTarget "APNSKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99F222E82093B62E00EEE531 /* Debug */,
-				99F222E92093B62E00EEE531 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99F222EB2093B62E00EEE531 /* Build configuration list for PBXNativeTarget "APNSKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99F222EC2093B62E00EEE531 /* Debug */,
-				99F222ED2093B62E00EEE531 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		FAC493C81EDE972F00D01A0A /* Build configuration list for PBXProject "APNSMobile" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1078,6 +787,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		465D4327242C7B7900812A5F /* RemoteSwiftPackageReference */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xiangyu-sun/APNsCore.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		465D4328242C7B7900812A5F /* SwiftPackageProductDependency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 465D4327242C7B7900812A5F /* RemoteSwiftPackageReference */;
+			productName = APNsCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAC493C51EDE972F00D01A0A /* Project object */;
 }
